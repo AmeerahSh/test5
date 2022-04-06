@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        * {
+            direction: rtl;
+            list-style: none;
+        }
+
+        body {
+            background-color: antiquewhite;
+        }
+
+        header {
+            /* border:2px solid;*/
+            background-color: darkcyan;
+            position: absolute;
+            /* display:block;*/
+            margin-top: 0;
+            top: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 50px;
+        }
+
+
+        /*
+           .header{
+               width:100%;
+               height:100px;
+               background-color:black;
+               position:relative;
+
+           }*/
+
+        .ul_header {
+        }
+
+            .ul_header li {
+                /* position:absolute;*/
+                top: 0px;
+                list-style: none;
+                /*border:2px solid black;*/
+                margin-left: 10px;
+                display: inline;
+            }
+
+
+        .a_header {
+            /*padding: 10px;*/
+            text-decoration: none;
+            color: white;
+            margin-left: 10px;
+            /*background-color: darkslateblue;*/
+            /* transition: .1s;*/
+        }
+
+        .a_back {
+            /* border:2px solid black;*/
+            /*  float:right;*/
+            padding: 10px;
+            transition: 1s;
+            margin-left: 10px;
+            display: inline;
+        }
+
+            .a_back:hover {
+                background-color: darkslateblue;
+                opacity: 1;
+                transform: scale(1);
+                /* transform:scale(1);*/
+            }
+
+        .squer {
+            background-image: url(html_picture.png);
+            background-size: cover;
+            /*border: 2px solid black;*/
+            position: relative;
+            margin: auto;
+            /* display: contents; */
+            top: 150px;
+            width: 350px;
+            height: 350px;
+            box-shadow: -8px 6px 20px 0px;
+        }
+
+        p {
+            position: relative;
+            text-align: center;
+            top: 200px;
+            font-size: x-large;
+            color: dodgerblue;
+        }
+
+        .btn1 {
+            position: relative;
+            right: 46%;
+            width: 100px;
+            top: 180px;
+            background-color: dodgerblue;
+            padding: 5px;
+            border-radius: 10px;
+            color: white;
+            transition: 1s;
+            box-shadow: 0 5px 25px rgba(1 1 1 / 50%);
+            /*  box-shadow: 0 5px 25px rgba(1 1 1 / 50%);*/
+        }
+
+            .btn1:hover {
+                transform: scale(1.1);
+            }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <ul class="ul_header">
+            <li><a class="a_header" href="#">الصفحة الرئسية</a></li>
+            <li><a class="a_header" href="#">تواصل معنا</a></li>
+            <li><a class="a_header" href="#">تفاصيل الدورة</a></li>
+
+        </ul>
+    </header>
+    <div class="squer"></div>
+    <p>دورة لتعلم CSS</p>
+    <input class="btn1" type="submit" value="إنضمام" />
+</body>
+</html>
